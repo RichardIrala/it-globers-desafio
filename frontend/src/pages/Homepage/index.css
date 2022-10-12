@@ -1,13 +1,16 @@
 .principalContainer {
-  height: 100vh;
-  min-height: max-content;
+  min-height: 100vh;
+  height: max-content;
 }
 .homepageContentContainer {
-  height: calc(100% - 143px);
+  min-height: calc(100vh - 143px);
+  height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
+
 .homepageContent {
   display: flex;
   flex-direction: column;
