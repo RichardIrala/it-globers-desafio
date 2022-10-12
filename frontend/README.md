@@ -3,16 +3,16 @@
 Creada por Richard Irala
 GitHub: <a href="https://github.com/RichardIrala">Richard Irala</a>
 
-## _Deploy FrontEnd:_ <a href="">Click Aqui</a>
+## _Deploy:_ <a href="">Click Aqui</a>
 
-## _Tecnologias FrontEnd_
+## _Tecnologias_
 
-Este desafio utiliza como tecnologías principales en el FrontEnd:
+Esta desafio utiliza como tecnologías principales:
 
 - [React] -
 - [TypeScript] -
 
-## _Herramienta de compilado del FrontEnd_
+## _Herramienta de compilado_
 
 - [Webpack] - La misma tiene una configuración básica creada por mi
 
