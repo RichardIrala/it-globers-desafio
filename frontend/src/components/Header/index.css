@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.headerLogoText {
+  font-size: 48px;
+  font-weight: var(--weightBold);
+  font-family: principalFont, sans-serif;
+  color: var(--white);
+}
+.nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav > ul > li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: principalFont;
+  font-weight: var(--weightMedium);
+  color: var(--white);
+}
+
+.headerAcountSection {
+  display: flex;
+  gap: 20px;
+}
+.headerAcountSection__textContent {
+  font-size: 20px;
+  color: var(--white);
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+}
