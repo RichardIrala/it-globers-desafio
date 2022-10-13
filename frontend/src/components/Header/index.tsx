@@ -1,37 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import VerticalLine from "ui/VerticalLine";
 import styles from "./index.css";
-import mockIcon from "assets/mockIcon.png";
-
+import menuIcon from "assets/menuIcon.png";
+import closeMenuIcon from "assets/closeMenuIcon.png";
 const Header = () => {
+  const [renderMenu, setRenderMenu] = useState(true);
+
   return (
     <header className={styles.header}>
-      <div className={styles.headerPrincipalContainer}>
+      <img
+        className={styles.menuIcon}
+        onClick={() => {
+          setRenderMenu(!renderMenu);
+        }}
+        src={renderMenu ? menuIcon : closeMenuIcon}
+        alt="Abrir menu"
+      />
+
+      <div
+        className={
+          styles.headerPrincipalContainer +
+          (renderMenu ? " " + styles.renderMenu : "")
+        }
+      >
         {/* nombre de la empresa */}
         <div>
           <h1 className={styles.headerLogoText}>Pufi</h1>
         </div>
-        {/* navegacion */}
+        {/* navegacion.. se podría profundizar y conectar a los productos para que funcione pero me enfoque en el maquetado..*/}
         <nav className={styles.nav}>
           <ul>
             <li>
               <a href="">
-                <img src={mockIcon} alt="" width={60} height={60} />
-                <span>PUFI ALGO</span>
+                <img
+                  src="https://res.cloudinary.com/richardiral/image/upload/v1665678100/it%20globers%20imagenes/bed_bedroom_furniture_home_icon_219420_b8iwyd.png"
+                  alt=""
+                  width={60}
+                  height={60}
+                />
+                <span>CAMA</span>
               </a>
             </li>
             <VerticalLine />
             <li>
               <a href="">
-                <img src={mockIcon} alt="" width={60} height={60} />
-                <span>PUFI ALGO</span>
+                <img
+                  src="https://res.cloudinary.com/richardiral/image/upload/v1665677369/it%20globers%20imagenes/sofa_furniture_couch_icon_209722_dfwsgp.png"
+                  alt=""
+                  width={60}
+                  height={60}
+                />
+                <span>SOFÁ</span>
               </a>
             </li>
             <VerticalLine />
             <li>
               <a href="">
-                <img src={mockIcon} alt="" width={60} height={60} />
-                <span>PUFI ALGO</span>
+                <img
+                  src="https://res.cloudinary.com/richardiral/image/upload/v1665677312/it%20globers%20imagenes/holiday_summer_beach_vacation_umbrella_icon_221887_ghy4tj.png"
+                  alt=""
+                  width={60}
+                  height={60}
+                />
+                <span>PARAGUAS</span>
               </a>
             </li>
           </ul>
@@ -45,8 +76,8 @@ const Header = () => {
             Mi cuenta
           </a>
           <VerticalLine />
-          <a href="" className={styles.headerAcountSection__textContent}>
-            Mi Compra
+          <a href="/cart" className={styles.headerAcountSection__textContent}>
+            Carrito
           </a>
         </div>
       </div>

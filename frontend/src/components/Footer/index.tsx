@@ -47,7 +47,7 @@ export const Footer = () => {
         <div className={styles.securePurchaseContainer}>
           <p className={styles.securePurchaseText}>COMPRA 100% SEGURA</p>
           <div className={styles.footerIconsContainer}>
-            <img src={shieldIcon} alt="Escudo" width={60} height={60} />
+            <img src={shieldIcon} alt="Escudo" width={"auto"} height={60} />
             <p>COMPRA CON GARANTÍA DE PUFFI</p>
           </div>
         </div>
@@ -57,7 +57,7 @@ export const Footer = () => {
         <div className={styles.socialMediasContainer}>
           <p>SEGUINOS EN</p>
           <div className={styles.socialMedias}>
-            <a href="">
+            <a href="https://www.facebook.com/" target="_blank">
               <img
                 src={facebookIcon}
                 alt="facebook logo"
@@ -65,7 +65,7 @@ export const Footer = () => {
                 height={50}
               />
             </a>
-            <a href="">
+            <a href="https://twitter.com/home" target="_blank">
               <img
                 src={twitterIcon}
                 alt="twitter logo"
@@ -73,7 +73,7 @@ export const Footer = () => {
                 height={40}
               />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/" target="_blank">
               <img
                 src={instagramIcon}
                 alt="instagram icon"
