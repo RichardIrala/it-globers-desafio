@@ -14,8 +14,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: cd frontend && npm install
-      - run: npm run build
+      - run: |
+          npm install
+        working-directory: ./frontend
+      - run: |
+          npm run build
+        working-directory: ./frontend
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
