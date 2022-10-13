@@ -1,13 +1,15 @@
 import Header from "components/Header";
 import Products from "components/Products";
+import ProductsCollage from "components/ProductsCollage";
 import React from "react";
+import SocialMediaAndHashtag from "ui/SocialMediaAndHashtag";
 import styles from "./index.css";
 import fondo from "/assets/main3.jpg";
 
 /* Se utiliza background en style inline porque al utilizarlo en css se compila mal la imagen 
 y esto conlleva a que el fondo no funcione, en cambio gracias a configuraciones de modulos de imagen
 los puedo utilizar importandolos aqui */
-
+const collageImages = [fondo, fondo, fondo, fondo, fondo, fondo];
 const Homepage = () => {
   return (
     <div>
@@ -24,6 +26,8 @@ const Homepage = () => {
         </div>
       </div>
       <Products />
+      <SocialMediaAndHashtag hashtag="espufi">instagram</SocialMediaAndHashtag>
+      <ProductsCollage productsData={collageImages} />
     </div>
   );
 };

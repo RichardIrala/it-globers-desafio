@@ -1,0 +1,13 @@
+.principalContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.principalContainer > img {
+  width: 250px;
+  height: 250px;
+}

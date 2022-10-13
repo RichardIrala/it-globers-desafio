@@ -1,0 +1,20 @@
+.principalContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--grey);
+}
+
+.principalContainer > h3 {
+  font-size: 20px;
+  color: var(--darkGrey);
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+}
+.principalContainer > p {
+  font-size: 40px;
+  color: var(--black);
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+}
