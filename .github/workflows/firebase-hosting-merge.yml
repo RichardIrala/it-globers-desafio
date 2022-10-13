@@ -20,7 +20,9 @@ jobs:
       - run: |
           npm run build
         working-directory: ./frontend
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: |
+          FirebaseExtended/action-hosting-deploy@v0
+        working-directory: ./frontend
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: >-
