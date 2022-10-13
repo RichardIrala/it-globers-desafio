@@ -14,7 +14,15 @@
 @media (max-width: 900px) {
   .footerPrincipalContainer {
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    width: fit-content;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .footerPrincipalContainer {
+    grid-template-columns: auto;
+    width: fit-content;
+    margin: auto;
   }
 }
 .footerLogoTextContainer,
@@ -74,6 +82,11 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 900px) {
+  .securePurchaseContainer {
+    align-items: initial;
+  }
+}
 .securePurchaseText {
   font-size: 16px;
   color: var(--black);
@@ -99,13 +112,18 @@
   grid-template-rows: auto auto;
   place-items: center;
 }
-
+@media (max-width: 900px) {
+  .socialMediasContainer {
+    display: flex;
+  }
+}
 .socialMedias {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+@media (max-width: 900px) {
+}
 /* Extras */
 @media (max-width: 900px) {
   .verticalDisplayNoneIn900 {

@@ -1,53 +1,29 @@
 import Product from "components/Product";
 import React from "react";
 import styles from "./index.css";
-const fondo =
-  "https://res.cloudinary.com/richardiral/image/upload/v1665629030/it%20globers%20imagenes/main3_mzurfu.jpg";
-const productsData = [
-  {
-    buttonContent: "Shop",
-    productTitle: "Paraguas",
-    productDescription: "Podría ser un producto real, lo soy?",
-    productContentButton: "Ver más",
-    productIconURL: fondo,
-    backgroundImage: fondo,
-  },
-  {
-    buttonContent: "Shop",
-    productTitle: "Paraguas2",
-    productDescription:
-      "Descripción del producto, este es un producto simulado",
-    productContentButton: "Ver más",
-    productIconURL: fondo,
-    backgroundImage: fondo,
-  },
-  {
-    buttonContent: "Shop",
-    productTitle: "Paraguas3",
-    productDescription: "Producto simulado",
-    productContentButton: "Ver más",
-    productIconURL: fondo,
-    backgroundImage: fondo,
-  },
-  {
-    buttonContent: "Shop",
-    productTitle: "Paraguas4",
-    productDescription:
-      "Descripción del producto, este es un producto simulado",
-    productContentButton: "Ver más",
-    productIconURL: fondo,
-    backgroundImage: fondo,
-  },
-];
+
+interface ProductProp {
+  buttonContent: string;
+  productTitle: string;
+  productDescription: string;
+  productContentButton: string;
+  productIconURL: string;
+  backgroundImageURL: string;
+}
+
+interface ProductsProps {
+  products: ProductProp[];
+}
 
 // Podría hacer que reciba los productos por props así es más reutilizable, no lo hice porque el proyecto no lo requería
-const Products = () => {
+const Products = (props: ProductsProps) => {
+  const productsData = props.products;
   return (
     <div className={styles.principalContainer}>
       {productsData?.map((product, index) => (
         <Product
           key={index}
-          backgroundImage={product.backgroundImage}
+          backgroundImage={product.backgroundImageURL}
           buttonContent={product.buttonContent}
           productContentButton={product.productContentButton}
           productDescription={product.productDescription}

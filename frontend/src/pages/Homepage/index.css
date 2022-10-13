@@ -1,15 +1,6 @@
-.paddingBottom {
-  /* padding-bottom: 60px; */
-}
 .principalContainer {
   min-height: 100vh;
   height: max-content;
-}
-.background {
-  min-height: 100vh;
-  width: 100%;
-  height: max-content;
-  position: absolute;
 }
 .homepageContentContainer {
   min-height: calc(100vh - 143px);
