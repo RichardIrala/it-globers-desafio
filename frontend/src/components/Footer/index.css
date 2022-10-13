@@ -4,28 +4,57 @@
   border-bottom: 2px solid var(--alternativeWhite);
 }
 .footerPrincipalContainer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3px 1fr 3px 1fr 3px 1fr;
   padding: 40px;
   gap: 10px;
   max-width: 1200px;
   margin: auto;
 }
-.footerLogoTextContainer {
+@media (max-width: 900px) {
+  .footerPrincipalContainer {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+.footerLogoTextContainer,
+.footerLogoTextMobileContainer {
   height: 100%;
 }
+.footerLogoTextMobileContainer {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.footerLogoTextMobile {
+  font-size: 40px;
+  font-weight: var(--weightBold);
+  font-family: principalFont, sans-serif;
+  color: var(--black);
+  text-align: center;
+  margin-top: 20px;
+}
+
 .footerLogoText {
   font-size: 40px;
   font-weight: var(--weightBold);
   font-family: principalFont, sans-serif;
   color: var(--black);
 }
-
+@media (max-width: 900px) {
+  .footerLogoTextMobileContainer {
+    display: initial;
+  }
+  .footerLogoTextContainer {
+    display: none;
+  }
+}
 .navigationCol {
 }
 .navigationCol > ul {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 .navigationCol > ul > li {
   list-style-type: none;
@@ -39,7 +68,12 @@
   display: flex;
   gap: 10px;
 }
-
+.securePurchaseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .securePurchaseText {
   font-size: 16px;
   color: var(--black);
@@ -47,11 +81,34 @@
   font-weight: var(--weightNormal);
   text-align: center;
 }
-
+@media (max-width: 900px) {
+  .securePurchaseText {
+    text-align: initial;
+  }
+}
 .footerIconsContainer > p {
   max-width: 100px;
   font-size: 14px;
   color: var(--darkGrey);
   font-family: var(--principalFont);
   font-weight: var(--weightNormal);
+}
+
+.socialMediasContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: center;
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Extras */
+@media (max-width: 900px) {
+  .verticalDisplayNoneIn900 {
+    display: none;
+  }
 }

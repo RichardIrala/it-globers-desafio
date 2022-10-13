@@ -15,9 +15,16 @@
   font-family: principalFont, sans-serif;
   color: var(--white);
 }
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .nav > ul {
   display: flex;
   gap: 20px;
+  padding: 0;
 }
 
 .nav > ul > li {

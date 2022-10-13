@@ -17,21 +17,21 @@ const Header = () => {
             <li>
               <a href="">
                 <img src={mockIcon} alt="" width={60} height={60} />
-                <span>PUFFI ALGO</span>
+                <span>PUFI ALGO</span>
               </a>
             </li>
             <VerticalLine />
             <li>
               <a href="">
                 <img src={mockIcon} alt="" width={60} height={60} />
-                <span>PUFFI ALGO</span>
+                <span>PUFI ALGO</span>
               </a>
             </li>
             <VerticalLine />
             <li>
               <a href="">
                 <img src={mockIcon} alt="" width={60} height={60} />
-                <span>PUFFI ALGO</span>
+                <span>PUFI ALGO</span>
               </a>
             </li>
           </ul>

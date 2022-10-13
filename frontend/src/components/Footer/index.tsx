@@ -2,10 +2,17 @@ import React from "react";
 import VerticalLine from "ui/VerticalLine";
 import styles from "./index.css";
 import shieldIcon from "assets/shieldIcon.png";
+import facebookIcon from "assets/facebookIcon.png";
+import instagramIcon from "assets/instagramIcon.png";
+import twitterIcon from "assets/twitterIcon.png";
 
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <div className={styles.footerLogoTextMobileContainer}>
+        <h1 className={styles.footerLogoTextMobile}>Pufi</h1>
+      </div>
+
       <div className={styles.footerPrincipalContainer}>
         <div className={styles.footerLogoTextContainer}>
           <h1 className={styles.footerLogoText}>Pufi</h1>
@@ -14,15 +21,15 @@ export const Footer = () => {
         <div>
           <nav className={styles.navigationCol}>
             <ul>
-              <li>PuffiRain</li>
-              <li>PuffiRain</li>
-              <li>PuffiRain</li>
-              <li>PuffiRain</li>
+              <li>PUFI RAIN</li>
+              <li>PUFI PUF</li>
+              <li>PUFI CART</li>
+              <li>PUFI NAP</li>
             </ul>
           </nav>
         </div>
 
-        <VerticalLine />
+        <VerticalLine className={styles.verticalDisplayNoneIn900} />
 
         <div>
           <nav className={styles.navigationCol}>
@@ -35,9 +42,9 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <VerticalLine />
+        <VerticalLine className={styles.verticalDisplayNoneIn900} />
 
-        <div>
+        <div className={styles.securePurchaseContainer}>
           <p className={styles.securePurchaseText}>COMPRA 100% SEGURA</p>
           <div className={styles.footerIconsContainer}>
             <img src={shieldIcon} alt="Escudo" width={60} height={60} />
@@ -45,13 +52,36 @@ export const Footer = () => {
           </div>
         </div>
 
-        <VerticalLine />
+        <VerticalLine className={styles.verticalDisplayNoneIn900} />
 
-        <div>
+        <div className={styles.socialMediasContainer}>
           <p>SEGUINOS EN</p>
-          <a href="">icono fb</a>
-          <a href="">icono instagram</a>
-          <a href="">icono twitter</a>
+          <div className={styles.socialMedias}>
+            <a href="">
+              <img
+                src={facebookIcon}
+                alt="facebook logo"
+                width={50}
+                height={50}
+              />
+            </a>
+            <a href="">
+              <img
+                src={twitterIcon}
+                alt="twitter logo"
+                width={40}
+                height={40}
+              />
+            </a>
+            <a href="">
+              <img
+                src={instagramIcon}
+                alt="instagram icon"
+                width={40}
+                height={40}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
