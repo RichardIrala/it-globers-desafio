@@ -4,6 +4,7 @@
   --weightMedium: 500;
   --weightBold: 700;
   --white: #fff;
+  --alternativeWhite: #f1eeee;
   --grey: #dbdada;
   --darkGrey: rgb(88, 86, 86);
   --black: rgb(15, 15, 15);
@@ -16,7 +17,7 @@
 }
 
 body {
-  background-color: var(--grey);
+  background-color: var(--white);
 }
 
 .display-none {

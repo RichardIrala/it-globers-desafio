@@ -1,8 +1,12 @@
 .header {
+}
+.headerPrincipalContainer {
   display: flex;
   padding: 30px;
   justify-content: space-between;
   align-items: flex-start;
+  margin: auto;
+  max-width: 1600px;
 }
 
 .headerLogoText {
