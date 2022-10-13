@@ -1,7 +1,8 @@
 import Product from "components/Product";
 import React from "react";
 import styles from "./index.css";
-import fondo from "/assets/main3.jpg";
+const fondo =
+  "https://res.cloudinary.com/richardiral/image/upload/v1665629030/it%20globers%20imagenes/main3_mzurfu.jpg";
 const productsData = [
   {
     buttonContent: "Shop",
