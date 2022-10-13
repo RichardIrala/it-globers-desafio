@@ -1,0 +1,17 @@
+.buttonTransparent {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: var(--weightNormal);
+  font-family: principalFont, sans-serif;
+  color: var(--white);
+  padding: 10px 30px;
+  border: solid var(--white) 2px;
+  background-color: transparent;
+}
+
+.buttonTransparent:hover {
+  background-color: var(--white);
+  border: solid rgb(31, 29, 29) 2px;
+  color: rgb(31, 29, 29);
+  transition: 2s;
+}

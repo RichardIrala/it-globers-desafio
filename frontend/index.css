@@ -4,6 +4,9 @@
   --weightMedium: 500;
   --weightBold: 700;
   --white: #fff;
+  --grey: #dbdada;
+  --darkGrey: rgb(88, 86, 86);
+  --black: rgb(15, 15, 15);
 }
 
 * {

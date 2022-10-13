@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import Products from "components/Products";
 import React from "react";
 import styles from "./index.css";
 import fondo from "/assets/main3.jpg";
@@ -9,17 +10,20 @@ los puedo utilizar importandolos aqui */
 
 const Homepage = () => {
   return (
-    <div
-      style={{ background: `url(${fondo}) top center / cover` }}
-      className={styles.principalContainer}
-    >
-      <Header />
-      <div className={styles.homepageContentContainer}>
-        <div className={styles.homepageContent}>
-          <h3>{"Estar cómodo nunca fue tan fácil.".toUpperCase()}</h3>
-          <button>SHOP</button>
+    <div>
+      <div
+        style={{ background: `url(${fondo}) top center / cover` }}
+        className={styles.principalContainer}
+      >
+        <Header />
+        <div className={styles.homepageContentContainer}>
+          <div className={styles.homepageContent}>
+            <h3>{"Estar cómodo nunca fue tan fácil.".toUpperCase()}</h3>
+            <button>SHOP</button>
+          </div>
         </div>
       </div>
+      <Products />
     </div>
   );
 };
