@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.form__textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__newsLetter {
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+  color: var(--darkGrey);
+  font-size: 20px;
+}
+.form__suscribite {
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+  color: var(--black);
+  font-size: 40px;
+}
+
+.form__subEndText {
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+  color: var(--black);
+  font-size: 18px;
+}
+
+.form__label {
+  width: 100%;
+  display: flex;
+  gap: 1px;
+}
+
+.form__label > input {
+  font-size: 18px;
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+.form__label > input::placeholder {
+  font-size: 18px;
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+  border: none;
+}
+
+.form__label > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-family: var(--principalFont);
+  font-weight: var(--weightBold);
+  width: 40px;
+  height: 40px;
+  background-color: #2ac8e1;
+}
+.form__label > button:hover {
+  background-color: #4160b6;
+  transition: 2s;
+}

@@ -1,3 +1,6 @@
+.paddingBottom {
+  /* padding-bottom: 60px; */
+}
 .principalContainer {
   min-height: 100vh;
   height: max-content;
@@ -36,4 +39,10 @@
   padding: 10px 30px;
   border: solid var(--white) 2px;
   background-color: transparent;
+}
+.homepageContent > button:hover {
+  background-color: var(--white);
+  border: solid rgb(31, 29, 29) 2px;
+  color: rgb(31, 29, 29);
+  transition: 2s;
 }

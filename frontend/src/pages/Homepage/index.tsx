@@ -1,6 +1,8 @@
+import { Footer } from "components/Footer";
 import Header from "components/Header";
 import Products from "components/Products";
 import ProductsCollage from "components/ProductsCollage";
+import SubscribeForm from "components/SubscribeForm";
 import React from "react";
 import SocialMediaAndHashtag from "ui/SocialMediaAndHashtag";
 import styles from "./index.css";
@@ -13,7 +15,7 @@ los puedo utilizar importandolos aqui */
 const collageImages = [fondo, fondo, fondo, fondo, fondo, fondo];
 const Homepage = () => {
   return (
-    <div>
+    <div className={styles.paddingBottom}>
       <div
         style={{ background: `url(${fondo}) top center / cover` }}
         className={styles.principalContainer}
@@ -29,6 +31,8 @@ const Homepage = () => {
       <Products />
       <SocialMediaAndHashtag hashtag="espufi">instagram</SocialMediaAndHashtag>
       <ProductsCollage productsData={collageImages} />
+      <SubscribeForm />
+      <Footer />
     </div>
   );
 };
