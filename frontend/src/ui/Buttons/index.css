@@ -15,3 +15,21 @@
   color: rgb(31, 29, 29);
   transition: 2s;
 }
+.buttonBlack {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: var(--weightNormal);
+  font-family: principalFont, sans-serif;
+  padding: 10px 30px;
+  border: solid rgb(31, 29, 29) 2px;
+  background-color: rgb(31, 29, 29);
+  color: var(--white);
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+.buttonBlack:hover {
+  color: rgb(31, 29, 29);
+  background-color: var(--white);
+  transition: 2s;
+}

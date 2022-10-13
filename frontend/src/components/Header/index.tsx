@@ -38,13 +38,16 @@ const Header = () => {
         </nav>
         {/* sección de la cuenta */}
         <div className={styles.headerAcountSection}>
-          <span className={styles.headerAcountSection__textContent}>
+          <a
+            href="/my-account"
+            className={styles.headerAcountSection__textContent}
+          >
             Mi cuenta
-          </span>
+          </a>
           <VerticalLine />
-          <span className={styles.headerAcountSection__textContent}>
+          <a href="" className={styles.headerAcountSection__textContent}>
             Mi Compra
-          </span>
+          </a>
         </div>
       </div>
     </header>

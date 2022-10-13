@@ -1,8 +1,16 @@
 import React from "react";
 import styles from "./index.css";
 
-const ButtonTransparent = (props) => {
+export const ButtonTransparent = (props: {
+  type?: "submit" | "button" | "reset";
+  children: string;
+}) => {
   return <button className={styles.buttonTransparent}>{props.children}</button>;
 };
 
-export default ButtonTransparent;
+export const ButtonBlack = (props: {
+  type?: "submit" | "button" | "reset";
+  children: string;
+}) => {
+  return <button className={styles.buttonBlack}>{props.children}</button>;
+};

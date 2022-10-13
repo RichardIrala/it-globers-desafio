@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonTransparent from "ui/Buttons";
+import { ButtonTransparent } from "ui/Buttons";
 import HorizontalLine from "ui/HorizontalLine";
 import styles from "./index.css";
 
