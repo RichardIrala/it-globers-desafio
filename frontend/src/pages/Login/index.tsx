@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { setToken } from "reducers/userSlice";
 import { ButtonBlack } from "ui/Buttons";
 import LabelWithInput from "ui/LabelWithInput";
+import { Title } from "ui/Title";
 import styles from "./index.css";
 
 const Login = () => {
@@ -32,16 +33,19 @@ const Login = () => {
     }
   }
   return (
-    <form className={styles.principal_container} onSubmit={loginOnSubmit}>
-      <LabelWithInput
-        inputName="password"
-        autocomplete="off"
-        inputType="password"
-      >
-        Contraseña
-      </LabelWithInput>
-      <ButtonBlack type="submit">Confirmar</ButtonBlack>
-    </form>
+    <div className={styles.principalContainer}>
+      <Title centred>Autenticación</Title>
+      <form className={styles.form} onSubmit={loginOnSubmit}>
+        <LabelWithInput
+          inputName="password"
+          autocomplete="off"
+          inputType="password"
+        >
+          Contraseña
+        </LabelWithInput>
+        <ButtonBlack type="submit">Confirmar</ButtonBlack>
+      </form>
+    </div>
   );
 };
 

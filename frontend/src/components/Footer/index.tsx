@@ -21,10 +21,26 @@ export const Footer = () => {
         <div>
           <nav className={styles.navigationCol}>
             <ul>
-              <li>PUFI RAIN</li>
-              <li>PUFI PUF</li>
-              <li>PUFI CART</li>
-              <li>PUFI NAP</li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  PUFI RAIN
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  PUFI PUF
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  PUFI CART
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  PUFI NAP
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -34,10 +50,26 @@ export const Footer = () => {
         <div>
           <nav className={styles.navigationCol}>
             <ul>
-              <li>CONTACTO</li>
-              <li>AYUDA</li>
-              <li>COMO COMPRAR</li>
-              <li>TERMINOS Y CONDICIONES</li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  CONTACTO
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  AYUDA
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  COMO COMPRAR
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/RichardIrala" target="__blank">
+                  TERMINOS Y CONDICIONES
+                </a>
+              </li>
             </ul>
           </nav>
         </div>

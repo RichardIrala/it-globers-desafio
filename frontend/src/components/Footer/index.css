@@ -66,10 +66,13 @@
 }
 .navigationCol > ul > li {
   list-style-type: none;
-  color: var(--black);
+}
+.navigationCol > ul > li > a {
+  text-decoration: none;
   font-family: var(--principalFont);
   font-weight: var(--weightNormal);
   font-size: 16px;
+  color: var(--black);
 }
 
 .footerIconsContainer {

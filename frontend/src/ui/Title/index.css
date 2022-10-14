@@ -1,0 +1,9 @@
+.title {
+  font-size: 36px;
+  font-family: var(--principalFont);
+  font-weight: var(--weightNormal);
+}
+
+.textCentred {
+  text-align: center;
+}

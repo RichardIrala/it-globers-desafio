@@ -3,6 +3,7 @@ import VerticalLine from "ui/VerticalLine";
 import styles from "./index.css";
 import menuIcon from "assets/menuIcon.png";
 import closeMenuIcon from "assets/closeMenuIcon.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [renderMenu, setRenderMenu] = useState(true);
 
@@ -69,16 +70,16 @@ const Header = () => {
         </nav>
         {/* sección de la cuenta */}
         <div className={styles.headerAcountSection}>
-          <a
-            href="/my-account"
+          <Link
+            to="/my-account"
             className={styles.headerAcountSection__textContent}
           >
             Mi cuenta
-          </a>
+          </Link>
           <VerticalLine />
-          <a href="/cart" className={styles.headerAcountSection__textContent}>
+          <Link to="/cart" className={styles.headerAcountSection__textContent}>
             Carrito
-          </a>
+          </Link>
         </div>
       </div>
     </header>

@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import LabelWithInput from "ui/LabelWithInput";
 import { setToken } from "reducers/userSlice";
 import { ButtonBlack } from "ui/Buttons";
+import { Title } from "ui/Title";
 
 const SignUp = () => {
   const userData = useSelector((state: any) => state.user);
@@ -43,28 +44,31 @@ const SignUp = () => {
   }
 
   return (
-    <form className={styles.principal_container} onSubmit={registerOnSubmit}>
-      <LabelWithInput inputName="name" placeholder="fulanito">
-        Nombre
-      </LabelWithInput>
-      <div className={styles.passwords_container}>
-        <LabelWithInput
-          inputName="password"
-          autocomplete="off"
-          inputType="password"
-        >
-          Contraseña
+    <div className={styles.principalContainer}>
+      <Title centred>Registrate</Title>
+      <form className={styles.form} onSubmit={registerOnSubmit}>
+        <LabelWithInput inputName="name" placeholder="fulanito">
+          Nombre
         </LabelWithInput>
-        <LabelWithInput
-          inputName="repeated_password"
-          autocomplete="off"
-          inputType="password"
-        >
-          Repetir contraseña
-        </LabelWithInput>
-      </div>
-      <ButtonBlack type="submit">Registrarse</ButtonBlack>
-    </form>
+        <div className={styles.passwords_container}>
+          <LabelWithInput
+            inputName="password"
+            autocomplete="off"
+            inputType="password"
+          >
+            Contraseña
+          </LabelWithInput>
+          <LabelWithInput
+            inputName="repeated_password"
+            autocomplete="off"
+            inputType="password"
+          >
+            Repetir contraseña
+          </LabelWithInput>
+        </div>
+        <ButtonBlack type="submit">Registrarse</ButtonBlack>
+      </form>
+    </div>
   );
 };
 

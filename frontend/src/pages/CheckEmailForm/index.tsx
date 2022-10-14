@@ -6,11 +6,11 @@ import { setEmail } from "reducers/userSlice";
 import styles from "./index.css";
 import LabelWithInput from "ui/LabelWithInput";
 import { ButtonBlack } from "ui/Buttons";
+import { Title } from "ui/Title";
 
 const CheckEmailForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const userData = useSelector((state: any) => state.user);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -46,16 +46,19 @@ const CheckEmailForm = () => {
   }
 
   return (
-    <form className={styles.principal_container} onSubmit={handleSubmit}>
-      <LabelWithInput
-        inputName="email"
-        inputType="email"
-        placeholder="fulanito@ejemplo.com"
-      >
-        Email
-      </LabelWithInput>
-      <ButtonBlack type="submit">Siguiente</ButtonBlack>
-    </form>
+    <div className={styles.principalContainer}>
+      <Title centred>Autenticación</Title>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <LabelWithInput
+          inputName="email"
+          inputType="email"
+          placeholder="fulanito@ejemplo.com"
+        >
+          Email
+        </LabelWithInput>
+        <ButtonBlack type="submit">Siguiente</ButtonBlack>
+      </form>
+    </div>
   );
 };
 
