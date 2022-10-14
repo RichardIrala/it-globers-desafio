@@ -26,7 +26,6 @@ const Login = () => {
       if (!result.resjson.token) {
         alert("contraseña incorrecta");
       } else {
-        console.log(result.resjson.token, "SOY EL TOKEN S ESUPONE");
         dispatch(setToken(result.resjson.token));
         navigate("/");
       }

@@ -9,13 +9,19 @@ import { useSelector } from "react-redux";
 export const AppRoutes = () => {
   const userData = useSelector((state: any) => state.user);
 
-  const { token } = userData;
+  const { token, email } = userData;
   return (
     <Routes>
       <Route path="/" element={<Homepage />}></Route>
       <Route path="/checkEmail" element={<CheckEmailForm />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/signup" element={<SignUp />}></Route>
+      <Route path="/login" element={!Boolean(email) 
+        ? <Navigate to={"/checkEmail"} /> 
+        :<Login />}>
+      </Route>
+      <Route path="/signup" element={!Boolean(email) 
+        ? <Navigate to={"/checkEmail"} /> 
+        : <SignUp />}>
+      </Route>
       <Route
         path="/my-account"
         element={

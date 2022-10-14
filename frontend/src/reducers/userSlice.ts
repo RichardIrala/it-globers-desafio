@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { persistReduxState } from "helpers/persistReduxState";
-const userState = JSON.parse(localStorage.getItem("prueba"));
+const userState = JSON.parse(localStorage.getItem("userState"));
 
 export const userSlice = createSlice({
   name: "user",
@@ -16,16 +16,16 @@ export const userSlice = createSlice({
       state.token = action.payload;
 
       //   Con esto persisto el estado. El persist lo cree a mano
-      persistReduxState("prueba", { ...state, token: action.payload });
+      persistReduxState("userState", { ...state, token: action.payload });
       //   Esto me permite ver el cambio en tiempo real en consola
-      const userData = localStorage.getItem("prueba");
-      console.log(userData);
+      const userData = localStorage.getItem("userState");
+    //   console.log(userData);
     },
     setEmail: (state, action: any) => {
       state.email = action.payload;
-      persistReduxState("prueba", { ...state, email: action.payload });
-      const userData = localStorage.getItem("prueba");
-      console.log(userData);
+      persistReduxState("userState", { ...state, email: action.payload });
+      const userData = localStorage.getItem("userState");
+    //   console.log(userData);
     },
   },
 });
