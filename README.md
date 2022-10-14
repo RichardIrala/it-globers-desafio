@@ -36,7 +36,7 @@ Redux se aplica solamente para guardar y persistir la cuenta del usuario al mome
 
 Respecto a React no tuve problemas, utilice una estructura de encarpetado (ui: userInterface, components: componentes, pages: páginas de la app presentes en el Router, etc). Respecto a Redux no lo suelo utilizar, lo que hice con el mismo fue algo que aprendi leyendo en estas horas mientras desarrollaba el desafío. Un manejador de estados que suelo Utilizar suele ser Recoil y/o un State generado por mano propia. Aunque podría aprender redux de manera ágil y adaptarme rápido al mismo.
 
-### _¿Con qué compila la Single Page ApPlication?_
+### _¿Con qué compila la Single Page Application?_
 
 La misma compila con Webpack. La ya mencionada fue configurada por mi mismo con los respectivos Loaders y cosas que senti necesarios para poder trabajar. Como extra también trabaje con CSS Modules los cuales al compilar sufren cambios para reducir la probabilidad de que se repitan selectores.
 
