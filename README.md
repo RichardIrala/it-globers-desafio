@@ -11,7 +11,7 @@ Este desafio utiliza como tecnologías principales en el FrontEnd:
 
 - [React] -
 - [TypeScript] -
-- [react-redux] -
+- [React-redux] -
 
 ## _Herramienta de compilado del FrontEnd_
 
