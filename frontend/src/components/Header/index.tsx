@@ -77,7 +77,7 @@ const Header = () => {
             Mi cuenta
           </Link>
           <VerticalLine />
-          <Link to="/cart" className={styles.headerAcountSection__textContent}>
+          <Link to="" className={styles.headerAcountSection__textContent}>
             Carrito
           </Link>
         </div>
