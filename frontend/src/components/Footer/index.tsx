@@ -93,8 +93,8 @@ export const Footer = () => {
               <img
                 src={facebookIcon}
                 alt="facebook logo"
-                width={50}
-                height={50}
+                width={40}
+                height={40}
               />
             </a>
             <a href="https://twitter.com/home" target="_blank">
